@@ -44,7 +44,7 @@ html, body, .view {
             height: 600px !important;
             width: 100%;
             overflow:auto !important ;
-            max-height: 600px !important; 
+            max-height: 600px !important;
         }
 
 /* home Background*/
@@ -143,4 +143,32 @@ footer.page-footer {
 
 .CSS_Container, .JS_Container {
     display: none;
+}
+/*** Profile page**/
+.customecard {
+    padding: 2px;
+    margin: 10px;
+    background-color: rgba(80, 166, 224, 0.4);
+    font-family: cursive;
+    text-align: center;
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 10px;
+}
+
+.leftIcon {
+    float: left;
+    color: darkred;
+}
+
+.rightIcon {
+    float: right;
+    color: blue;
+}
+
+.add {
+    font-size: 150px;
+    text-align: center;
+    color: #19B5FE;
+    width: 100%;
+    text-align: center;
 }

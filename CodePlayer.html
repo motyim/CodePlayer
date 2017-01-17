@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,7 +18,7 @@
     <!-- our Style -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- colorfy --> 
+    <!-- colorfy -->
     <link rel="stylesheet" href="css/colorify.css">
     <script type="text/javascript" src="js/Code.js"></script>
     <script type="text/javascript" src="js/Database.js"></script>
@@ -27,6 +27,7 @@
 </head>
 
 <body>
+
     <div class="modal fade modal-ext" id="Name" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <!--Content-->
@@ -37,8 +38,13 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     <h3><i class="fa fa-user"></i> Enter Name</h3>
-                    <input  id="penName" />
-                    
+
+                    <div class="md-form">
+                        <i class="fa fa-envelope prefix"></i>
+                        <input type="text" id="penName" class="form-control" placeholder="Name for Code">
+                        <button type="button" class="btn btn-success">Success</button>
+                    </div>
+
                 </div>
                 <!--Body-->
 
@@ -50,23 +56,23 @@
     <nav class="navbar navbar-dark grey darken-4">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     Code Player
                 </a>
             </div>
 
             <ul class="nav navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#Profile">Profile</a>
+                    <a class="nav-link" href="profile.html">Profile</a>
                 </li>
             </ul>
 
 
             <ul class="center">
-                <li  class="btn btn-elegant navbar-btn toggle">HTML</li>
-                <li  class="btn btn-default navbar-btn toggle">CSS</li>
-                <li  class="btn btn-default navbar-btn toggle">JS</li>
-                <li  class="btn btn-elegant navbar-btn toggle">Result</li>
+                <li class="btn btn-elegant navbar-btn toggle">HTML</li>
+                <li class="btn btn-default navbar-btn toggle">CSS</li>
+                <li class="btn btn-default navbar-btn toggle">JS</li>
+                <li class="btn btn-elegant navbar-btn toggle">Result</li>
             </ul>
 
 
@@ -83,37 +89,37 @@
     </nav>
 
     <div class="container-fluid">
-      <div class="row">
+        <div class="row">
 
 
-        <div class="col-md-6 text HTML_Container">
+            <div class="col-md-6 text HTML_Container">
                 <div class="codeLabel">HTML</div>
                 <textarea id="htmlCode" placeholder="write you html code here"></textarea>
-        </div>
-
-       
+            </div>
 
 
-        <div class="col-md-6 text CSS_Container">
+
+
+            <div class="col-md-6 text CSS_Container">
                 <div class="codeLabel">CSS</div>
-                <textarea id="cssCode"  placeholder="write you css code here"></textarea>
+                <textarea id="cssCode" placeholder="write you css code here"></textarea>
             </div>
 
-       <div class="col-md-6 text JS_Container">
+            <div class="col-md-6 text JS_Container">
                 <div class="codeLabel">JS</div>
-                <textarea  id="jsCode" placeholder="write you java script code here"></textarea>
+                <textarea id="jsCode" placeholder="write you java script code here"></textarea>
             </div>
 
-        <div class="col-md-6 text Result_Container">
-          <div class="codeLabel">Result</div>
-          <iframe id="resultFrame"></iframe>
+            <div class="col-md-6 text Result_Container">
+                <div class="codeLabel">Result</div>
+                <iframe id="resultFrame"></iframe>
+            </div>
+
+
+
+
+
         </div>
-
-
-
-
-
-      </div>
     </div>
 
 
@@ -130,19 +136,19 @@
 
     <script type="text/javascript" src="js/codePlayer.js"></script>
 
-   <script type="text/javascript" src="js/jquery.colorfy.js"></script>
+    <script type="text/javascript" src="js/jquery.colorfy.js"></script>
     <script type="text/javascript" src="js/jquery.colorfy.markdown.js"></script>
 
 
-<script type="text/javascript">
-        window.onload = function () {
-         
+    <script type="text/javascript">
+        window.onload = function() {
+
 
 
             $('#htmlCode').colorfy("markdown");
             $('#jsCode').colorfy("markdown");
             $('#cssCode').colorfy("markdown");
-            var mail=sessionStorage.getItem("email");
+            var mail = sessionStorage.getItem("email");
             var name = sessionStorage.getItem("username");
             alert(mail);
             alert(name);

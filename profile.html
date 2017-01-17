@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Code Player | Profile</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+
+    <!-- Modal delete confirmation -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                    <h4 class="modal-title" id="myModalLabel">Confirme Delete</h4>
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+                    Are you sure you want to delete this card?
+                </div>
+                <!--Footer-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" onclick="########">Delete</button>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!-- /.Live preview-->
+    <!-- Start your project here-->
+
+    <header>
+        <!--Navbar-->
+        <!--Navbar-->
+        <nav class="navbar navbar-dark grey darken-4 warning-color-dark">
+
+            <!-- Collapse button-->
+            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx23"><i class="fa fa-bars"></i></button>
+
+            <div class="container">
+
+                <!--Collapse content-->
+                <div class="collapse navbar-toggleable-xs" id="collapseEx23">
+                    <!--Navbar Brand-->
+
+                    <!--Links-->
+                    <ul class="nav navbar-nav">
+                        <a class="navbar-brand" href="index.html">Code Player</a>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="codePlayer.html"><i class="fa fa-plus fa-1x" aria-hidden="true"></i> Start Project</a>
+                        </li>
+
+
+                    </ul>
+                    <!--/Links-->
+
+                    <!--Links-->
+                    <ul class="nav navbar-nav nav-flex-icons">
+
+
+                        <li class="nav-item avatar">
+                            <a class="nav-link" id="dropdownMenu1" aria-haspopup="true" aria-expanded="false">
+                                <img src="http://mdbootstrap.com/img/Photos/Avatars/img%20%288%29.jpg" class="rounded-circle" alt="Sample avatar image" style="width:35px">
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item ">
+                            <button type="button" class="btn btn-cyan btn-success btn-sm">logout</button>
+
+                        </li>
+
+                    </ul>
+                    <!--Links-->
+                </div>
+                <!--/.Collapse content-->
+
+            </div>
+
+        </nav>
+        <!--/.Navbar-->
+    </header>
+
+    <main>
+        <div class="container" id="cardContainer">
+            <div class="row" id="cardRow">
+
+
+              <div class="col-md-4 col-sm-8 col-xs-12 ">
+                  <div class="card-block view overlay hm-teal-strong">
+                      <!--Card image-->
+
+                      <a class="fa fa-plus-circle  add" aria-hidden="true" href="codePlayer.html"></a>
+
+
+                      <!--/.Card image-->
+                  </div>
+
+              </div>
+
+                <!--Card-->
+                <div class="col-md-4 col-sm-8 col-xs-12" id="cardNumberFromDatabase">
+
+                    <div class="card customecard">
+
+                        <!--Card content-->
+                        <div class="card-block">
+                            <!--delete / edit butttons-->
+                            <a href="#delete" data-toggle="modal" data-target="#myModal"><i class="fa fa-times fa-2x leftIcon" aria-hidden="true"></i></a>
+                            <a href="#edit"><i class="fa fa-pencil fa-2x rightIcon" aria-hidden="true"></i></a>
+
+                            <br>
+                            <hr>
+                            <!--Title-->
+                            <a href="#cardDetails"><h4 class="card-title">Card title</h4></a>
+                            <hr>
+                            <!--label for last modified date-->
+                            <label>last modified</label>
+                        </div>
+
+                        <!--/.Card content-->
+
+                    </div>
+                </div>
+                <!--/.Card-->
+                <!--Card-->
+                <div class="col-md-4 col-sm-8 col-xs-12">
+
+                    <div class="card customecard ">
+
+                        <!--Card content-->
+                        <div class="card-block">
+                            <!--delete / edit butttons-->
+                            <a href="#delete" data-toggle="modal" data-target="#myModal"><i class="fa fa-times fa-2x leftIcon" aria-hidden="true"></i></a>
+                            <a href="#edit"><i class="fa fa-pencil fa-2x rightIcon" aria-hidden="true"></i></a>
+
+                            <br>
+                            <hr>
+                            <!--Title-->
+                            <a href="#cardDetails"><h4 class="card-title">Card title</h4></a>
+                            <hr>
+                            <!--label for last modified date-->
+                            <label>last modified</label>
+                        </div>
+
+                        <!--/.Card content-->
+
+                    </div>
+                </div>
+                <!--/.Card-->
+
+                <!-- add new card image-->
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+
+</body>
+
+</html>
