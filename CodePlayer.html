@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Code Player</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-dark grey darken-4">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+        			Code Player
+      			</a>
+            </div>
+
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#Profile">Profile</a>
+                </li>
+            </ul>
+
+
+            <ul class="center">
+                <li  class="btn btn-elegant navbar-btn toggle">HTML</li>
+                <li  class="btn btn-default navbar-btn toggle">CSS</li>
+                <li  class="btn btn-default navbar-btn toggle">JS</li>
+                <li  class="btn btn-elegant navbar-btn toggle">Result</li>
+            </ul>
+
+
+
+
+
+            <span class="nav navbar-nav fl_right">
+
+          <a  class="btn btn-success btn-sm " id="save">Save</a>
+          <a  class="btn btn-info btn-sm " id="run" >Run</a>
+
+        </span>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-md-6 text HTML_Container">
+          <div class="md-form">
+            <textarea type="text" id="htmlCode" class="md-textarea" placeholder="write you html code here"></textarea>
+            <label for="htmlCode">HTML</label>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 text CSS_Container">
+          <div class="md-form">
+            <textarea type="text" id="cssCode" class="md-textarea" placeholder="write you css code here"></textarea>
+            <label for="cssCode">CSS</label>
+          </div>
+        </div>
+
+        <div class="col-md-6 text JS_Container">
+          <div class="md-form">
+            <textarea type="text" id="jsCode" class="md-textarea" placeholder="write you java script code here"></textarea>
+            <label for="jsCode">JS</label>
+          </div>
+        </div>
+
+        <div class="col-md-6 text Result_Container">
+          <div class="codeLabel">Result</div>
+          <iframe id="resultFrame"></iframe>
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+
+    <script src="js/jquery.nicescroll.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script src="js/codePlayer.js"></script>
+
+</body>
+
+</html>

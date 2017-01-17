@@ -1,0 +1,141 @@
+/* OUR CUSTOM STYLES */
+
+/* Necessary for full page carousel*/
+
+html, body, .view {
+    height: 100%;
+}
+
+
+/* Navigation*/
+
+.navbar {
+    background-color: transparent;
+}
+
+.h1-responsive {
+    font-weight: bolder;
+}
+
+.scrolling-navbar {
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+.top-nav-collapse {
+    background-color: #1C2331;
+}
+
+.fl_right {
+    float: right;
+}
+
+.center {
+    text-align: center;
+    float: left;
+    margin-left: 217px;
+    margin-bottom: 0px;
+}
+.center .toggle{
+  margin: 0;
+}
+
+
+/* home Background*/
+
+.Background {
+    height: 100%;
+}
+
+.flex-center {
+    color: #fff;
+}
+
+.carousel-caption {
+    height: 100%;
+    padding-top: 7rem;
+}
+
+
+/**features**/
+
+.features {
+    text-align: center;
+}
+
+.features i {
+    padding: 24px;
+}
+
+
+/** Team **/
+
+.rounded-circle {
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+
+
+/** Footer **/
+
+footer.page-footer {
+    background-color: #1C2331;
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #1C2331;
+    }
+    .login {
+        float: left;
+    }
+}
+
+
+/** Text **/
+
+.text {
+    margin-top: 17px;
+    border-right: 1px solid;
+    position: relative;
+}
+
+.text .codeLabel {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 1px solid ghostwhite;
+    border-radius: 5px;
+    padding: 1px;
+    color: gainsboro;
+    cursor: initial;
+    cursor: default;
+    /** pervent select **/
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE/Edge */
+    user-select: none;
+}
+
+.text textarea {
+    height: 500px;
+}
+
+.text iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+.CSS_Container, .JS_Container {
+    display: none;
+}
