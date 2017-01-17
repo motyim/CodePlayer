@@ -40,7 +40,12 @@ html, body, .view {
 .center .toggle{
   margin: 0;
 }
-
+.null {
+            height: 600px !important;
+            width: 100%;
+            overflow:auto !important ;
+            max-height: 600px !important; 
+        }
 
 /* home Background*/
 

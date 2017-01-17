@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,9 +21,27 @@
     <!-- OUR styles -->
     <link rel="stylesheet" href="css/style.css">
 
+
 </head>
 
 <body>
+    <div class="modal fade modal-ext" id="modal-registerd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3><i class="fa fa-user"></i> Registeration Done!</h3>
+                </div>
+                <!--Body-->
+
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
 
 
     <!-- Modal Register -->
@@ -39,13 +57,11 @@
                     <h3><i class="fa fa-user"></i> Register</h3>
                 </div>
                 <!--Body-->
-
-                <form class="modal-body" action="#">
-                  <!-- Error Message -->
-                   <div id="Error_Alert_reg" class="alert alert-danger" role="alert" style="display:none;">
-                     <i class="fa fa-ban" aria-hidden="true"></i>
-                      <span id="Error_msg_Reg">Error</span>
-                   </div>
+                <form class="modal-body" action="#" id="form" >
+                    <div id="Error_Alert_reg" class="alert alert-danger" role="alert" style="display:none;">
+                        <i class="fa fa-ban" aria-hidden="true"></i>
+                        <span id="Error_msg_Reg">Error</span>
+                    </div>
                     <div class="md-form">
                         <i class="fa fa-user prefix"></i>
                         <input type="text" id="username" class="form-control" required>
@@ -55,7 +71,9 @@
                     <div class="md-form">
                         <i class="fa fa-envelope prefix"></i>
                         <input type="email" id="email" class="form-control" required>
-                        <label for="email">Your email</label>
+						 <input type="hidden" id="flagm">
+
+                        <label for="email" id="test">Your email</label>
                     </div>
 
                     <div class="md-form">
@@ -69,9 +87,12 @@
                         <input type="password" id="repassword" class="form-control" required>
                         <label for="repassword">Repeat password</label>
                     </div>
-
+<div id ="errors" class="md-form">
+      </div>
+	  <div id ="errors2" class="md-form">
+      </div>
                     <div class="text-xs-center">
-                      <button class="btn btn-primary btn-lg" type="submit" id="btn_singup">Sign up</button>
+                      <button class="btn btn-primary btn-lg" type="submit" id="btn-signup">Sign up</button>
                     </div>
                 </form>
 
@@ -97,22 +118,23 @@
                 </div>
 
                 <!--Body-->
-                <form class="modal-body" action="#">
-                  <!-- Error Message -->
-                   <div id="Error_Alert_login" class="alert alert-danger" role="alert" style="display:none;">
-                     <i class="fa fa-ban" aria-hidden="true"></i>
-                      <span id="Error_msg_login">Error</span>
-                   </div>
+                <form class="modal-body" action="#" id="loginform">
+                    <div id="Error_Alert_login" class="alert alert-danger" role="alert" style="display:none;">
+                        <i class="fa fa-ban" aria-hidden="true"></i>
+                        <span id="Error_msg_login">Error</span>
+                    </div>
                     <div class="md-form">
                         <i class="fa fa-envelope prefix"></i>
-                        <input type="email" id="email" class="form-control" required>
+                        <input type="email" id="email2" class="form-control" required>
                         <label for="email">Your email</label>
                     </div>
 
                     <div class="md-form">
                         <i class="fa fa-lock prefix"></i>
-                        <input type="password" id="password" class="form-control" required>
+                        <input type="password" id="password2" class="form-control" required>
                         <label for="password">Your password</label>
+                    </div>
+                    <div id="error3" class="md-form">
                     </div>
                     <div class="text-xs-center">
                         <button class="btn btn-primary btn-lg" type="submit" id="btn_login">Login</button>
@@ -161,7 +183,7 @@
                 </ul>
                 <!--Search form-->
 
-                <button type="button" class="btn btn-primary btn-sm fl_right" data-toggle="modal" data-target="#modal-login">Login</button>
+                <button type="button" class="btn btn-primary btn-sm login" data-toggle="modal" data-target="#modal-login">Login</button>
 
             </div>
             <!--/.Collapse content-->
@@ -193,7 +215,7 @@
                                 <p class="wow fadeIn" data-wow-delay="0.2s">The most powerful Online Client Side Editor </p>
                             </li>
                             <li>
-                                <a class="btn btn-primary btn-lg wow fadeInLeft" data-toggle="modal" data-target="#modal-register">Sign up!</a>
+                                <a id="btnsign" class="btn btn-primary btn-lg wow fadeInLeft" data-toggle="modal" data-target="#modal-register">Sign up!</a>
                                 <a class="btn btn-default btn-lg wow fadeInRight">Start Codeing</a>
                             </li>
                         </ul>
@@ -334,6 +356,10 @@
 
     <script src="js/script.js"></script>
 
+
+
+    <script type="text/javascript" src="js/Code.js"></script>
+    <script type="text/javascript" src="js/Database.js"></script>
 </body>
 
 </html>

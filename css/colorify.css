@@ -1,0 +1,41 @@
+    
+
+  .markdown .ident {
+       color: blue;
+     }
+	
+     .markdown .funcname {
+       color: green;
+     }
+	   .markdown .string {
+       color: orange;
+     }
+	  .markdown .sep {
+       color: red;
+     }
+     .markdown .strong {
+       color: pink;
+     }
+	
+     .markdown .emphasis {
+       color: pink;
+     }
+     .markdown .strikethrough {
+       color: blue;
+     }
+	 .markdown .rule {
+       color: green;
+     }
+     .markdown .inlinecode {
+       color: purple;
+     }
+     .markdown .codeblock {
+       color: #CC0066;
+     }
+     .markdown .orderedlist {
+       color: maroon;
+     }
+     .markdown .unorderedlist {
+       color: silver;
+     }
+    

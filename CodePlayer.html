@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,19 +15,44 @@
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
 
+    <!-- our Style -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- colorfy --> 
+    <link rel="stylesheet" href="css/colorify.css">
+    <script type="text/javascript" src="js/Code.js"></script>
+    <script type="text/javascript" src="js/Database.js"></script>
+
 
 </head>
 
 <body>
+    <div class="modal fade modal-ext" id="Name" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3><i class="fa fa-user"></i> Enter Name</h3>
+                    <input  id="penName" />
+                    
+                </div>
+                <!--Body-->
 
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
 
     <nav class="navbar navbar-dark grey darken-4">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">
-        			Code Player
-      			</a>
+                    Code Player
+                </a>
             </div>
 
             <ul class="nav navbar-nav">
@@ -50,7 +75,7 @@
 
             <span class="nav navbar-nav fl_right">
 
-          <a  class="btn btn-success btn-sm " id="save">Save</a>
+                <a class="btn btn-success btn-sm " id="save" data-toggle="modal" data-target="#Name">Save</a>
           <a  class="btn btn-info btn-sm " id="run" >Run</a>
 
         </span>
@@ -60,27 +85,24 @@
     <div class="container-fluid">
       <div class="row">
 
+
         <div class="col-md-6 text HTML_Container">
-          <div class="md-form">
-            <textarea type="text" id="htmlCode" class="md-textarea" placeholder="write you html code here"></textarea>
-            <label for="htmlCode">HTML</label>
-          </div>
+                <div class="codeLabel">HTML</div>
+                <textarea id="htmlCode" placeholder="write you html code here"></textarea>
         </div>
+
+       
 
 
         <div class="col-md-6 text CSS_Container">
-          <div class="md-form">
-            <textarea type="text" id="cssCode" class="md-textarea" placeholder="write you css code here"></textarea>
-            <label for="cssCode">CSS</label>
-          </div>
-        </div>
+                <div class="codeLabel">CSS</div>
+                <textarea id="cssCode"  placeholder="write you css code here"></textarea>
+            </div>
 
-        <div class="col-md-6 text JS_Container">
-          <div class="md-form">
-            <textarea type="text" id="jsCode" class="md-textarea" placeholder="write you java script code here"></textarea>
-            <label for="jsCode">JS</label>
-          </div>
-        </div>
+       <div class="col-md-6 text JS_Container">
+                <div class="codeLabel">JS</div>
+                <textarea  id="jsCode" placeholder="write you java script code here"></textarea>
+            </div>
 
         <div class="col-md-6 text Result_Container">
           <div class="codeLabel">Result</div>
@@ -106,10 +128,27 @@
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/codePlayer.js"></script>
 
-    <script src="js/codePlayer.js"></script>
+   <script type="text/javascript" src="js/jquery.colorfy.js"></script>
+    <script type="text/javascript" src="js/jquery.colorfy.markdown.js"></script>
+
+
+<script type="text/javascript">
+        window.onload = function () {
+         
+
+
+            $('#htmlCode').colorfy("markdown");
+            $('#jsCode').colorfy("markdown");
+            $('#cssCode').colorfy("markdown");
+            var mail=sessionStorage.getItem("email");
+            var name = sessionStorage.getItem("username");
+            alert(mail);
+            alert(name);
+
+        }
+    </script>
 
 </body>
 

@@ -19,7 +19,7 @@ $(function(){
 
     css = "<style>" + $("#cssCode").val() + "</style>";
 
-    html = $("#htmlCode").val();
+    html = $(".HTML_Container .markdown").text();
 
     //set html content to iframe
     $("iframe").contents().find("html").html(css + html);
@@ -34,7 +34,6 @@ $(function(){
     var perCol , curCol , current_width ;
 
     current_width = 12 / $(".center").find(".btn-elegant").length;
-    console.log(current_width);
     perCol = "col-md-" + pervious_width;
     curCol = "col-md-" + current_width ;
 
